@@ -1,0 +1,25 @@
+/* 
+  COLOR PALETTE:
+  - Primary Dark Background: #0F172A (Obsidian Slate)
+  - Primary Accent / CTAs: #22C55E (Electric Neon Green)
+  - Crisp Body Text / Cards: #F8FAFC (Off-White)
+  - Secondary Text / Borders: #64748B (Cool Muted Gray)
+*/
+
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #2B1B3D;
+  color: #FDF8F3;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
