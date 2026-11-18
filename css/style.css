@@ -92,3 +92,27 @@ nav a.nav-cta {
   font-size: 0.8rem;
   font-weight: 700;
 }
+
+nav a.nav-cta:hover {
+  background-color: #b06972;
+  color: #FDF8F3;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 7rem 5%;
+  text-align: center;
+  background-color: #2B1B3D;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  color: #FDF8F3;
+  letter-spacing: 0.5px;
+}
