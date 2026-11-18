@@ -1,9 +1,10 @@
 /* 
   COLOR PALETTE:
-  - Primary Dark Background: #0F172A (Obsidian Slate)
-  - Primary Accent / CTAs: #22C55E (Electric Neon Green)
-  - Crisp Body Text / Cards: #F8FAFC (Off-White)
-  - Secondary Text / Borders: #64748B (Cool Muted Gray)
+  - Deep Plum (#2B1B3D): Primary dark background
+  - Soft Blush (#F6E7E4): Light background sections and card surfaces
+  - Rose Gold (#C97B84): Primary accent for CTAs, headings, and highlights
+  - Warm Ivory (#FDF8F3): Main text color and clean content areas
+  - Muted Mauve (#8C7A8F): Secondary text, borders, and subtle details
 */
 
 /* Global Resets */
@@ -22,4 +23,72 @@ body {
 
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+header {
+  background-color: #2B1B3D;
+  border-bottom: 1px solid #8C7A8F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  display: block;
+  line-height: 0;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav a {
+  color: #FDF8F3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #C97B84;
+}
+
+nav a.nav-cta {
+  background-color: #C97B84;
+  color: #2B1B3D;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
