@@ -34,6 +34,7 @@ a {
 header {
   background-color: #2B1B3D;
   border-bottom: 1px solid #8C7A8F;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +52,13 @@ header {
 .logo a {
   display: block;
   line-height: 0;
+  flex-wrap: wrap;
+  font-family: 'Fruktur', cursive;
+  font-size: larger;
+  font-weight: 800;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .logo-img {
@@ -66,6 +74,7 @@ header {
 /* Navigation Styles */
 nav ul {
   list-style: none;
+  flex-wrap: wrap;
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -84,7 +93,7 @@ nav a:hover {
 
 nav a.nav-cta {
   background-color: #C97B84;
-  color: #2B1B3D;
+  color: #f9f5f9;
   padding: 0.5rem 1.1rem;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
@@ -98,11 +107,17 @@ nav a.nav-cta:hover {
   color: #FDF8F3;
 }
 
+nav a:hover, nav a.nav-cta:hover {
+  color:#8C7A8F;
+}
+
 /* Hero Section Styles */
 .hero {
   padding: 7rem 5%;
   text-align: center;
-  background-color: #2B1B3D;
+  background: linear-gradient(rgba(43, 27, 61, 0.45), rgba(43, 27, 61, 0.55)), url('../images/photos/hero-bg.jfif');
+  background-size: cover;
+  background-position: no-repeat;
 }
 
 .hero-content {
@@ -115,4 +130,141 @@ nav a.nav-cta:hover {
   margin-bottom: 1.5rem;
   color: #FDF8F3;
   letter-spacing: 0.5px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #F6E7E4;
+  margin-bottom: 2.5rem;
+}
+
+/* Action Button */
+.btn-primary {
+    display: inline-block;
+    background-color: #C97B84;
+    color: #2B1B3D;
+    padding: 0.9rem 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b06972;
+    transform: translateY(-2px);
+    color: #FDF8F3;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 5%;
+    background-color: #F6E7E4;
+    color: #2B1B3D;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2B1B3D;
+}
+
+.about-text p {
+    color: #8C7A8F;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 5%;
+    background-color: #F6E7E4;
+    color: #2B1B3D;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2B1B3D;
+}
+
+.about-text p {
+    color: #8C7A8F;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Classes Section */
+.classes-preview {
+    padding: 5rem 5%;
+    background-color: #2B1B3D;
+    text-align: center;
+}
+
+.classes-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #FDF8F3;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.class-card {
+    background-color: #F6E7E4;
+    color: #2B1B3D;
+    border: 1px solid #8C7A8F;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-card h3 {
+    color: #C97B84;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.class-card p {
+    color: #2B1B3D;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2B1B3D;
+    border-top: 1px solid #8C7A8F;
+    padding: 3rem 5%;
+    text-align: center;
+    color: #8C7A8F;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
 }
