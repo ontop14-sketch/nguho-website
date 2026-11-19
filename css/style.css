@@ -1,6 +1,6 @@
 /* 
   COLOR PALETTE:
-  - Deep Plum (#2B1B3D): Primary dark background
+  - Deep Plum (#2B1B3D) or (#503272): Primary dark background
   - Soft Blush (#F6E7E4): Light background sections and card surfaces
   - Rose Gold (#C97B84): Primary accent for CTAs, headings, and highlights
   - Warm Ivory (#FDF8F3): Main text color and clean content areas
@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #2B1B3D;
+  background-color: #503272;
   color: #FDF8F3;
   line-height: 1.6;
 }
@@ -32,7 +32,7 @@ a {
 
 /* Header Styles */
 header {
-  background-color: #2B1B3D;
+  background-color: #503272;
   border-bottom: 1px solid #8C7A8F;
   flex-wrap: wrap;
   display: flex;
@@ -54,7 +54,7 @@ header {
   line-height: 0;
   flex-wrap: wrap;
   font-family: 'Fruktur', cursive;
-  font-size: larger;
+  font-size: 2.5rem;
   font-weight: 800;
   display: flex;
   gap: 1.5rem;
@@ -62,7 +62,7 @@ header {
 }
 
 .logo-img {
-  height: 55px;
+  height: 100px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -93,7 +93,7 @@ nav a:hover {
 
 nav a.nav-cta {
   background-color: #C97B84;
-  color: #f9f5f9;
+  color: #2B1B3D;
   padding: 0.5rem 1.1rem;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
@@ -108,7 +108,7 @@ nav a.nav-cta:hover {
 }
 
 nav a:hover, nav a.nav-cta:hover {
-  color:#8C7A8F;
+  color:#fffeff; /*#8C7A8*/
 }
 
 /* Hero Section Styles */
@@ -211,7 +211,7 @@ nav a:hover, nav a.nav-cta:hover {
 /* Classes Section */
 .classes-preview {
     padding: 5rem 5%;
-    background-color: #2B1B3D;
+    background-color: #503272;
     text-align: center;
 }
 
@@ -257,7 +257,7 @@ nav a:hover, nav a.nav-cta:hover {
 
 /* Footer */
 footer {
-    background-color: #2B1B3D;
+    background-color: #503272;
     border-top: 1px solid #8C7A8F;
     padding: 3rem 5%;
     text-align: center;
