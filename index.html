@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cherry & Top Dance Studio</title>
+    <title>Cherry &amp; Top Dance Studio</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Fruktur&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
         rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -21,13 +21,13 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Cherry & Top Dance Studio Logo" class="logo-img">
-                <div>Cherry & Top Dance Studio</div>
+                <img src="images/logo.png" alt="Cherry and Top Dance Studio logo" class="logo-img">
+                <span>Cherry &amp; Top Dance Studio</span>
             </a>
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Classes</a></li>
                 <li><a href="#">Schedule</a></li>
@@ -43,39 +43,58 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
+                <span class="hero-tag">Studio &amp; Performance Training</span>
                 <h1>Express Your Artistry in Motion</h1>
-                <p>Welcome to Cherry & Top Dance Studio. Discover ballet, hip-hop, contemporary, jazz, and Latin dance
-                    classes designed for children, teens, and adults in an inclusive, inspiring environment.</p>
+                <p>Welcome to Cherry &amp; Top Dance Studio. Discover ballet, hip-hop, contemporary, jazz, and Latin
+                    dance classes designed for children, teens, and adults in an inclusive, inspiring environment.</p>
                 <a href="#" class="btn-primary">Book Free Trial Class</a>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section class="about">
+        <!-- About & Studio Highlights Section -->
+        <section id="about" class="about">
             <div class="about-container">
                 <div class="about-text">
-                    <h2>About Our Studio</h2>
-                    <p>Founded to provide high-quality dance education in a welcoming and supportive community, Cherry &
-                        Top Dance Studio nurtures technical excellence alongside creative freedom. From beginner
-                        children's programs to advanced performance training, we help every dancer shine.</p>
+                    <h2>Train Your Way at Cherry &amp; Top</h2>
+                    <p>Founded to provide high-quality dance education in a welcoming and supportive community, Cherry
+                        &amp; Top Dance Studio offers recreational and competitive classes for every age and skill
+                        level.</p>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <h3>All Ages &amp; Levels</h3>
+                        <p>Structured classes for young beginners, growing teens, and adult fitness or social dancers.
+                        </p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Passionate Instructors</h3>
+                        <p>Learn technique, stage confidence, and musicality from supportive, experienced teachers.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Recitals &amp; Community</h3>
+                        <p>Grow through weekly studio sessions, showcases, and an uplifting dance family.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Classes Preview Section -->
-        <section class="classes-preview">
-            <h2>Explore Our Dance Styles</h2>
+        <!-- Explore Dance Styles Section -->
+        <section id="classes" class="classes-preview">
+            <h2>Explore Dance Styles</h2>
             <div class="class-grid">
-                <div class="class-card">
+                <div class="class-card card-hiphop">
+                    <span class="style-badge">Sky Blue Pop</span>
+                    <h3>Hip-Hop</h3>
+                    <p>High-energy routines focused on rhythm, coordination, and contemporary urban dance styles.</p>
+                </div>
+                <div class="class-card card-ballet">
+                    <span class="style-badge">Cherry Classic</span>
                     <h3>Ballet</h3>
                     <p>Build core strength, posture, and classical technique in a structured, graceful environment
                         suitable for all ages.</p>
                 </div>
-                <div class="class-card">
-                    <h3>Hip-Hop</h3>
-                    <p>High-energy routines focused on rhythm, coordination, and contemporary urban dance styles.</p>
-                </div>
-                <div class="class-card">
+                <div class="class-card card-contemporary">
+                    <span class="style-badge">Buttercream Flow</span>
                     <h3>Contemporary</h3>
                     <p>Expressive movement combining elements of lyrical, modern, and classical ballet to tell powerful
                         stories.</p>
@@ -87,8 +106,9 @@
     <!-- Footer Section -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 Cherry & Top Dance Studio. All rights reserved.</p>
-            <p>Contact: info@cherrytopdance.com | Phone: (+63) 975-0370543</p>
+            <p>&copy; 2026 Cherry &amp; Top Dance Studio. All rights reserved.</p>
+            <p>Developed by Cherrylyn D. Nguho</p>
+            <p>Contact: info@cherrytopdance.com | Phone: (555) 987-6543</p>
         </div>
     </footer>
 
