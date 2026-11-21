@@ -37,5 +37,84 @@
     </header>
 
     <main>
+        <section class="page-banner">
+            <span class="hero-tag">First Class Free</span>
+            <h1>Sign Up for a Free Trial Class</h1>
+            <p>Fill out your details below and our studio team will confirm your spot within 24 hours.</p>
+        </section>
 
+        <section class="form-section">
+            <form class="trial-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="student-name">Student Full Name</label>
+                    <input type="text" id="student-name" name="student_name" placeholder="Enter student's full name"
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student-age">Student Age</label>
+                        <input type="number" id="student-age" name="student_age" min="4" max="99" placeholder="e.g., 14"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dance-style">Preferred Dance Style</label>
+                        <select id="dance-style" name="dance_style" required>
+                            <option value="">-- Choose a Style --</option>
+                            <option value="ballet">Ballet</option>
+                            <option value="hiphop">Hip-Hop</option>
+                            <option value="contemporary">Contemporary</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="latin">Latin Dance</option>
+                            <option value="fitness">Adult Dance Fitness</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="experience">Experience Level</label>
+                        <select id="experience" name="experience" required>
+                            <option value="beginner">Beginner (No experience)</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-day">Preferred Schedule</label>
+                        <select id="preferred-day" name="preferred_day" required>
+                            <option value="weekday-afternoon">Weekday Afternoon (4 PM – 6 PM)</option>
+                            <option value="weekday-evening">Weekday Evening (6 PM – 8 PM)</option>
+                            <option value="saturday">Saturday Morning / Afternoon</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address (Student or Parent)</label>
+                    <input type="email" id="contact-email" name="contact_email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-phone">Phone Number</label>
+                    <input type="tel" id="contact-phone" name="contact_phone" placeholder="(555) 123-4567" required>
+                </div>
+
+                <button type="submit" class="btn-primary form-submit">Submit Free Trial Registration</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Cherry &amp; Top Dance Studio. All rights reserved.</p>
+            <p>Developed by Cherrylyn D. Nguho</p>
+            <p>Contact: info@cherrytopdance.com | Phone: (555) 987-6543</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
