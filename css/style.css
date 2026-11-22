@@ -333,7 +333,9 @@ footer {
   margin-bottom: 0.45rem;
 }
 
-/* Gallery (Videos)*/
+/* ============================
+  GALLERY 
+  =============================*/
 .studio-gallery {
   margin: 0 auto 3.5rem;
   background-color: #2B252C; /* Espresso Charcoal stage strip for high-contrast media */
@@ -540,6 +542,96 @@ nav a.nav-cta.active-cta {
   font-size: 1.05rem;
 }
 
+/* =========================================
+   GALLERY PAGE: ALL-CLASS VIDEOS + PHOTOS
+   ========================================= */
+.gallery-section-head {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 2rem;
+}
+
+.media-thumb img,
+.media-thumb video,
+.media-thumb iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  display: block;
+}
+
+.gallery-section-head h2 {
+  font-size: 2.35rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section-head p {
+  font-size: 1rem;
+}
+
+.gallery-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.photo-gallery-band {
+  border-top: 2px solid #F7B2BD;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.photo-card {
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+}
+
+.photo-cherry { background-color: rgba(247, 178, 189, 0.28); }
+.photo-sky    { background-color: rgba(181, 216, 235, 0.28); }
+.photo-butter { background-color: rgba(252, 230, 148, 0.35); }
+
+.photo-frame {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 2px solid #2B252C;
+  background-color: #2B252C;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card figcaption {
+  padding: 1.25rem 1.4rem 1.45rem;
+}
+
+.photo-card h3 {
+  font-size: 1.65rem;
+  margin-bottom: 0.35rem;
+}
+
+.photo-card p {
+  font-size: 0.94rem;
+}
+
 /* --- Sign-Up Form --- */
 .form-section {
   padding: 4rem 5%;
@@ -597,6 +689,382 @@ nav a.nav-cta.active-cta {
 .form-submit {
   width: 100%;
   cursor: pointer;
+}
+
+/* =========================================
+   SCHEDULE, INSTRUCTORS & TUITION PAGES
+   ========================================= */
+.content-section {
+  padding: 4.5rem 5%;
+  background-color: #FFF9F7;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Schedule Legend & Table */
+.schedule-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.legend-pill {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2B252C;
+  border: 2px solid #2B252C;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+.pill-cherry, .tag-cherry { background-color: #F7B2BD; }
+.pill-sky, .tag-sky       { background-color: #B5D8EB; }
+.pill-butter, .tag-butter { background-color: #FCE694; }
+.pill-espresso, .tag-espresso { background-color: rgba(43, 37, 44, 0.25); color: #2B252C; }
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  background-color: #FFF9F7;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #2B252C;
+  color: #FFF9F7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 1.1rem 1rem;
+}
+
+.schedule-table td {
+  padding: 1.1rem 1rem;
+  border-bottom: 1px solid #F7B2BD;
+  vertical-align: top;
+  font-size: 0.92rem;
+}
+
+.schedule-table tr:last-child td {
+  border-bottom: none;
+}
+
+.time-col {
+  font-weight: 700;
+  white-space: nowrap;
+  background-color: rgba(252, 230, 148, 0.25);
+}
+
+.class-tag {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #2B252C;
+  border: 1px solid #2B252C;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  margin-bottom: 0.35rem;
+}
+
+/* Instructors Grid */
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+}
+
+.instructor-card {
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.instructor-card:hover {
+  transform: translateY(-5px);
+}
+
+.instructor-cherry { background-color: rgba(247, 178, 189, 0.28); }
+.instructor-sky    { background-color: rgba(181, 216, 235, 0.28); }
+.instructor-butter { background-color: rgba(252, 230, 148, 0.35); }
+.instructor-espresso { background-color: rgba(43, 37, 44, 0.28); }
+
+.instructor-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 2px solid #2B252C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2B252C;
+  margin-bottom: 1rem;
+}
+
+.avatar-cherry { background-color: #F7B2BD; }
+.avatar-sky    { background-color: #B5D8EB; }
+.avatar-butter { background-color: #FCE694; }
+.avatar-espresso { background-color: #2B252C; color: #FFF9F7; }
+
+.instructor-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.instructor-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.instructor-card p:last-of-type {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+  margin-top: auto;
+  display: inline-block;
+  background-color: #FFF9F7;
+  color: #2B252C;
+  border: 2px solid #2B252C;
+  padding: 0.65rem 1.3rem;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease;
+}
+
+.btn-outline:hover {
+  background-color: #F7B2BD;
+}
+
+/* Calendar Section */
+.calendar-band {
+  border-top: 2px solid #F7B2BD;
+}
+
+.calendar-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.calendar-header-row h2 {
+  font-size: 2.3rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cal-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #2B252C;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.dot-open     { background-color: #B5D8EB; }
+.dot-workshop { background-color: #FCE694; }
+.dot-holiday  { background-color: #F7B2BD; }
+
+.calendar-card {
+  background-color: #FFF9F7;
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #2B252C;
+  color: #FFF9F7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.85rem 0.4rem;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.cal-day {
+  min-height: 96px;
+  padding: 0.55rem;
+  border-right: 1px solid rgba(43, 37, 44, 0.18);
+  border-bottom: 1px solid rgba(43, 37, 44, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.35rem;
+  transition: background-color 0.2s ease;
+}
+
+.cal-day:nth-child(7n) {
+  border-right: none;
+}
+
+.cal-day:hover:not(.empty-day) {
+  background-color: rgba(252, 230, 148, 0.35);
+}
+
+.empty-day {
+  background-color: rgba(43, 37, 44, 0.04);
+}
+
+.is-holiday {
+  background-color: rgba(247, 178, 189, 0.25);
+}
+
+.has-workshop {
+  background-color: rgba(252, 230, 148, 0.25);
+}
+
+.day-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #2B252C;
+}
+
+.day-event {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #2B252C;
+  border: 1px solid #2B252C;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  line-height: 1.25;
+}
+
+.ev-cherry   { background-color: #F7B2BD; }
+.ev-sky      { background-color: #B5D8EB; }
+.ev-butter   { background-color: #FCE694; }
+.ev-espresso { background-color: #2B252C; color: #FFF9F7; }
+.ev-workshop { background-color: #FCE694; }
+.ev-holiday  { background-color: #F7B2BD; font-weight: 700; }
+
+.calendar-notices {
+  margin-top: 2rem;
+}
+
+/* Tuition Cards */
+.tuition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.tuition-card {
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  padding: 2.3rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-sky-tint    { background-color: rgba(181, 216, 235, 0.35); }
+.card-cherry-tint { background-color: rgba(247, 178, 189, 0.42); }
+.card-butter-tint { background-color: rgba(252, 230, 148, 0.42); }
+
+.featured-plan {
+  box-shadow: 0 8px 0 #2B252C;
+}
+
+.tuition-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.price span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.plan-features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.plan-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(43, 37, 44, 0.3);
+  font-size: 0.95rem;
+}
+
+.plan-features li::before {
+  content: "✓ ";
+  font-weight: 700;
+}
+
+.tuition-card .btn-primary {
+  margin-top: auto;
+}
+
+.tuition-note {
+  margin-top: 2.5rem;
+  padding: 1.4rem 1.6rem;
+  background-color: #FCE694;
+  border: 2px solid #2B252C;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 /* Mobile Phones (max-width: 820px) */
@@ -712,7 +1180,9 @@ nav a.nav-cta.active-cta {
   .class-card h3 {
     font-size: 1.6rem;
   }
-  /*Gallery*/
+  /*=====================
+  Gallery (Videos) stacked for phones
+  =====================*/
   .gallery-track {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -726,5 +1196,18 @@ nav a.nav-cta.active-cta {
   footer {
     padding: 2.2rem 4%;
     font-size: 0.85rem;
+  }
+
+  .calendar-weekdays,
+  .calendar-days {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendar-weekdays {
+    display: none;
+  }
+
+  .cal-day {
+    min-height: 78px;
   }
 }

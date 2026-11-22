@@ -14,10 +14,11 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Cherry & Top Dance Studio Logo" class="logo-img">
+                <img src="images/logo.png" alt="Cherry and Top Dance Studio logo" class="logo-img">
                 <span>Cherry &amp; Top Dance Studio</span>
             </a>
         </div>
@@ -26,10 +27,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About Us</a></li>
                 <li><a href="classes.html">Classes</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Instructors</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
                 <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
-                <li><a href="#">Tuition</a></li>
+                <li><a href="tuition.html">Tuition</a></li>
                 <li><a href="trial.html" class="nav-cta">Book Free Trial</a></li>
             </ul>
         </nav>
@@ -37,15 +38,36 @@
 
     <main>
         <section class="page-banner">
-            <span class="hero-tag">Compilations</span>
-            <h1>Studio Videos &amp; Photos</h1>
-            <p>Watch choreography highlights, class sessions, and recitals from our dancers and coaches.</p>
+            <span class="hero-tag">Videos &amp; Studio Stills</span>
+            <h1>Studio Video &amp; Photo Gallery</h1>
+            <p>Watch choreography videos from every class style and browse rehearsal and studio photo highlights.</p>
         </section>
 
-        <section class="about">
-            <div class="about-container">
+        <!-- Section 1: Class Videos (All 6 Styles) -->
+        <section class="content-section">
+            <div class="section-container">
+                <div class="gallery-section-head">
+                    <span class="style-badge">All 6 Dance Styles</span>
+                    <h2>Class Videos</h2>
+                    <p>Preview choreography and technique across Hip-Hop, Ballet, Contemporary, Jazz, Latin Dance, and
+                        Dance Fitness.</p>
+                </div>
+
                 <div class="studio-gallery">
-                    <div class="gallery-track">
+                    <div class="gallery-grid-3">
+                        <!-- 1. Hip-Hop -->
+                        <div class="media-card">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/hiphop-bg.jfif">
+                                    <source src="videos/hiphop-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-hiphop">Hip-Hop</span>
+                            </div>
+                            <h3>"Jetski"</h3>
+                            <p>Coach Aerhyll | Hip-Hop | Teen &amp; Adult</p>
+                        </div>
+
+                        <!-- 2. Ballet -->
                         <div class="media-card">
                             <div class="media-thumb">
                                 <video controls poster="images/photos/ballet-bg.jfif">
@@ -54,31 +76,124 @@
                                 <span class="media-badge badge-ballet">Ballet</span>
                             </div>
                             <h3>"Grace in Motion"</h3>
-                            <p> Coach Kazuha | Beginner-Intermediate</p>
+                            <p>Coach Kazuha | Ballet | Beginner–Intermediate</p>
                         </div>
 
-                        <div class="media-card featured-media">
+                        <!-- 3. Contemporary -->
+                        <div class="media-card">
                             <div class="media-thumb">
-                                <video controls poster="images/photos/hiphop-bg.jfif">
-                                    <source src="videos/hiphop-demo.mp4" type="video/mp4">
-                                </video>
-                                <span class="media-badge badge-hiphop">Hip-Hop</span>
+                                <iframe src="https://www.youtube.com/embed/7fRVn_USC_o?si=mkUFEyniCbd96iB-"
+                                    title="YouTube video player" frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                <span class="media-badge badge-contemporary">Contemporary</span>
                             </div>
-                            <h3>"Jetski"</h3>
-                            <p>Coach Aerhyll | Teen &amp; Adult</p>
+                            <h3>"1985"</h3>
+                            <p>Coach Minjun | Contemporary | All Levels</p>
                         </div>
 
+                        <!-- 4. Jazz -->
+                        <div class="media-card">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/ballet-bg.jfif">
+                                    <source src="videos/jazz-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-ballet">Jazz</span>
+                            </div>
+                            <h3>"Spotlight Combo"</h3>
+                            <p>Coach Kazuha | Jazz | Beginner–Intermediate</p>
+                        </div>
+
+                        <!-- 5. Latin Dance -->
                         <div class="media-card">
                             <div class="media-thumb">
                                 <video controls poster="images/photos/contemporary-bg.jfif">
-                                    <source src="videos/contemporary-demo.mp4" type="video/mp4">
+                                    <source src="videos/latin-demo.mp4" type="video/mp4">
                                 </video>
-                                <span class="media-badge badge-contemporary">Contemporary</span>
+                                <span class="media-badge badge-contemporary">Latin Dance</span>
                             </div>
-                            <h3>“From Your Eyes”</h3>
-                            <p>Coach Julian | All Levels</p>
+                            <h3>"Rhythm &amp; Fire"</h3>
+                            <p>Coach Minjun | Latin Dance | Teens &amp; Adults</p>
+                        </div>
+
+                        <!-- 6. Dance Fitness -->
+                        <div class="media-card">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/hiphop-bg.jfif">
+                                    <source src="videos/fitness-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-hiphop">Dance Fitness</span>
+                            </div>
+                            <h3>"Cardio Groove"</h3>
+                            <p>Coach Aerhyll &amp; Coach Heeseung | Adults 18+</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Separate Studio Photos Section -->
+        <section class="content-section photo-gallery-band">
+            <div class="section-container">
+                <div class="gallery-section-head">
+                    <span class="style-badge">Behind the Scenes</span>
+                    <h2>Studio Photos</h2>
+                    <p>Snapshot moments from our rehearsals, studio sessions, and performance prep.</p>
+                </div>
+
+                <div class="photo-grid">
+                    <figure class="photo-card photo-cherry">
+                        <div class="photo-frame">
+                            <img src="images/photos/ballet-bg.jfif"
+                                alt="Ballet pointe shoes and classical studio inspiration">
+                        </div>
+                        <figcaption>
+                            <span class="class-tag tag-cherry">Ballet</span>
+                            <h3>Barre &amp; Pointe Prep</h3>
+                            <p>Focused posture and graceful linework in Studio A.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="photo-card photo-sky">
+                        <div class="photo-frame">
+                            <img src="images/photos/hiphop-bg.jfif" alt="Retro boombox and hip-hop street dance theme">
+                        </div>
+                        <figcaption>
+                            <span class="class-tag tag-sky">Hip-Hop</span>
+                            <h3>Retro Street Energy</h3>
+                            <p>High-energy grooves and crew routines in Studio B.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="photo-card photo-butter">
+                        <div class="photo-frame">
+                            <img src="images/photos/contemporary-bg.jfif"
+                                alt="Expressive contemporary and musical motif artwork">
+                        </div>
+                        <figcaption>
+                            <span class="class-tag tag-butter">Contemporary</span>
+                            <h3>Expression &amp; Musicality</h3>
+                            <p>Fluid movement and emotional storytelling across levels.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="photo-card photo-sky">
+                        <div class="photo-frame">
+                            <img src="images/photos/hero-bg.jfif"
+                                alt="Dancers practicing together inside Cherry and Top Dance Studio">
+                        </div>
+                        <figcaption>
+                            <span class="class-tag tag-sky">Studio Life</span>
+                            <h3>Ensemble Rehearsals</h3>
+                            <p>Dancers coming together for weekly sessions and showcases.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="section-action">
+                    <a href="trial.html" class="btn-primary">Book a Free Trial Class</a>
                 </div>
             </div>
         </section>
