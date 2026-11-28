@@ -356,14 +356,42 @@ footer {
 }
 
 .gallery-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 700;
   color: #F7B2BD;
   padding: 0 0.4rem;
-  user-select: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.gallery-arrow:hover {
+  color: #FCE694;
+  transform: scale(1.15);
+}
+
+.studio-gallery {
+  margin: 0 auto 4.5rem; /* Extra breathing room before the 3 yellow boxes */
+  background-color: #2B252C;
+  border: 2px solid #2B252C;
+  border-radius: 14px;
+  padding: 1.5rem 1.5rem 2rem;
+  color: #FFF9F7;
+}
+
+.gallery-cta {
+  margin-top: 2rem;
+}
+
+.highlights-grid {
+  margin-top: 1rem; /* Additional buffer below the gallery section */
 }
 
 .tab-pill {
+  background: transparent;
+  border: none;
+  cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
@@ -604,6 +632,7 @@ nav a.nav-cta.active-cta {
 .photo-cherry { background-color: rgba(247, 178, 189, 0.28); }
 .photo-sky    { background-color: rgba(181, 216, 235, 0.28); }
 .photo-butter { background-color: rgba(252, 230, 148, 0.35); }
+.photo-espresso { background-color: rgba(43, 37, 44, 0.28); }
 
 .photo-frame {
   aspect-ratio: 16 / 10;

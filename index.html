@@ -61,60 +61,62 @@
                         level.</p>
                 </div>
 
-                <!-- CLI Inspired, Video & Photo Gallery-->
+                <!-- CLI inspired, Video & Photo Gallery -->
                 <div class="studio-gallery">
-                    <div class="gallery-tabs">
-                        <span class="gallery-arrow" aria-hidden="true">&#8249;</span>
-                        <a href="classes.html" class="tab-pill">Ballet</a>
-                        <a href="classes.html" class="tab-pill active-tab">Hip-Hop</a>
-                        <a href="classes.html" class="tab-pill">Contemporary</a>
-                        <a href="classes.html" class="tab-pill">Jazz</a>
-                        <a href="classes.html" class="tab-pill">Latin</a>
-                        <span class="gallery-arrow" aria-hidden="true">&#8250;</span>
+                    <div class="gallery-tabs" role="tablist" aria-label="Dance Style Video Categories">
+                        <button type="button" class="gallery-arrow" id="prevCategory"
+                            aria-label="Previous dance style">&#8249;</button>
+                        <button type="button" class="tab-pill" data-index="0">Ballet</button>
+                        <button type="button" class="tab-pill active-tab" data-index="1">Hip-Hop</button>
+                        <button type="button" class="tab-pill" data-index="2">Contemporary</button>
+                        <button type="button" class="tab-pill" data-index="3">Jazz</button>
+                        <button type="button" class="tab-pill" data-index="4">Latin</button>
+                        <button type="button" class="gallery-arrow" id="nextCategory"
+                            aria-label="Next dance style">&#8250;</button>
                     </div>
-                </div>
 
-                <!-- Horizontal Video & Images Cards -->
-                <div class="gallery-track">
-                    <!-- Card 1: Ballet Video Preview -->
-                    <div class="media-card">
-                        <div class="media-thumb">
-                            <video controls poster="images/photos/ ballet-bg.jfif">
-                                <source src="videos/ballet-demo.mp4" type="video/mp4">
-                            </video>
-                            <span class="media-badge badge-ballet">Video</span>
+                    <!-- Horizontal Video Cards (Inside .studio-gallery) -->
+                    <div class="gallery-track" id="galleryTrack">
+                        <!-- Left Card -->
+                        <div class="media-card" id="leftCard">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/ballet-bg.jfif">
+                                    <source src="videos/ballet-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-ballet">Ballet</span>
+                            </div>
+                            <h3 class="video-title">"Grace in Motion"</h3>
+                            <p class="video-meta">Coach Kazuha | Ballet | Beginner–Intermediate</p>
                         </div>
-                        <h3>"Grace in Motion"</h3>
-                        <p>Coach Kazuha | Ballet | Beginner-Intermediate</p>
-                    </div>
 
-                    <!-- Card 2: Dance Practice Preview-->
-                    <div class="media-card featured-media">
-                        <div class="media-thumb">
-                            <video controls poster="images/photos/hiphop-bg.jfif">
-                                <source src="videos/hiphop-demo.mp4" type="video/mp4">
-                            </video>
-                            <span class="play-btn" aria-label="Play Hip-Hop Video">&#9654;</span>
-                            <span class="media-badge badge-hiphop">Featured Video</span>
+                        <!-- Center Featured Card -->
+                        <div class="media-card featured-media" id="centerCard">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/hiphop-bg.jfif">
+                                    <source src="videos/hiphop-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-hiphop">Featured Video</span>
+                            </div>
+                            <h3 class="video-title">"Jetski"</h3>
+                            <p class="video-meta">Coach Aerhyll Omit | Hip-Hop | Teen &amp; Adult</p>
                         </div>
-                        <h3>"Jetski"</h3>
-                        <p>Coach Aerhyll | Hip-Hop | Teen &amp; Adult</p>
-                    </div>
 
-                    <div class="media-card">
-                        <div class="media-thumb">
-                            <video controls poster="images/photos/contemporary-bg.jfif">
-                                <source src="videos/contemporary-demo.mp4" type="video/mp4">
-                            </video>
-                            <span class="media-badge badge-contemporary">Video</span>
+                        <!-- Right Card -->
+                        <div class="media-card" id="rightCard">
+                            <div class="media-thumb">
+                                <video controls poster="images/photos/contemporary-bg.jfif">
+                                    <source src="videos/contemporary-demo.mp4" type="video/mp4">
+                                </video>
+                                <span class="media-badge badge-contemporary">Contemporary</span>
+                            </div>
+                            <h3 class="video-title">“From Your Eyes”</h3>
+                            <p class="video-meta">Coach Minjun | Contemporary | All Levels</p>
                         </div>
-                        <h3>“From Your Eyes”</h3>
-                        <p>Coach Julian | Contemporary | All Levels</p>
                     </div>
-                </div>
 
-                <div class="section-action">
-                    <a href="gallery.html" class="btn-secondary">View Full Gallery &rarr;</a>
+                    <div class="section-action gallery-cta">
+                        <a href="gallery.html" class="btn-secondary">View Full Gallery &rarr;</a>
+                    </div>
                 </div>
 
                 <!-- Three Highlight Boxes -->
@@ -175,7 +177,8 @@
             <p>Contact: info@cherrytopdance.com | Phone: (555) 987-6543</p>
         </div>
     </footer>
-
+    <!-- Interactive Video Category Slider Script -->
+    <script src="javascript/gallery-slider.js"></script>
 </body>
 
 </html>
